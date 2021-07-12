@@ -1,5 +1,16 @@
 .books-wrapper {
-  background-color: red;
+  background-color: #31ff75;
+  list-style: none;
+  padding-left: 0;
+}
+.books-wrapper .book {
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=home.css.map */
