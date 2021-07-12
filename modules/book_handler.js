@@ -19,8 +19,8 @@ const Book_Handler  = {
         localStorage.setItem('books', JSON.stringify(storageBooks));
         Books.render();
     },
-    remove:()=>{
-        console.log('hello')
+    remove:(index)=>{
+        console.log('hello', index)
     },
     show:()=>{
         
