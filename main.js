@@ -1,8 +1,8 @@
-import sum from './modules/sum.js';
+import Book_Handler from '/modules/book_handler.js';
 
 
 const Init = () => {
-  console.log(sum);
+  console.log(Book_Handler);
 };
 
 Init();
