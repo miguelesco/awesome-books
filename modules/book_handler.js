@@ -1,4 +1,5 @@
 
+import Books from './books.js'
 
 const LocalStorage = window.localStorage;
 const form = document.querySelector('.form');
@@ -12,23 +13,14 @@ const Book_Handler  = {
         let inputs = document.getElementsByTagName('input');
         let title = inputs[0].value;
         let author = inputs[1].value;
-        const storageBooks = localStorage.getItem('books');
-        if(!storageBooks){
-            localStorage.setItem('books',JSON.stringify({title, author}));  
-            
-        }else{
-           let arrBooks =  [storageBooks];
-           arrBooks.push(JSON.stringify({title, author}));
-            console.log('works');  
-           localStorage.setItem('books',arrBooks);
-           
+        const storageBooks = JSON.parse(localStorage.getItem('books'));
 
-        }
-        // storageBooks.push({title, author});
-        //console.log(JSON.parse(storageBooks));
+        storageBooks.push({title, author});
+        localStorage.setItem('books', JSON.stringify(storageBooks));
+        Books.render();
     },
     remove:()=>{
-        
+        console.log('hello')
     },
     show:()=>{
         
