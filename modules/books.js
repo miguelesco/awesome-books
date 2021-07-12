@@ -1,18 +1,20 @@
 
 const bookList = document.querySelector('.books-wrapper');
 
-const Books = [
-    {
-        title:'Don Quijote',
-        author:'Miguel de Servantes'
-    },
-    {
-        title:'Don Quijote',
-        author:'Miguel de Servantes'
-    },
-];
+const LocalStorage = window.localStorage;
 
-Books.forEach(book => {
+const Books = {
+    list: [],
+    init: () => {
+        if (LocalStorage.getItem('books')) {
+            Books.list = LocalStorage.getItem('books');
+        }else {
+            localStorage.setItem('books', []);
+        }
+    }
+}
+
+Books.list.forEach(book => {
     const bookElement = `
     <li class="book">
         <p class="book-title">${book.title}</p>

@@ -3,8 +3,8 @@ import Books from './modules/books.js';
 
 
 const Init = () => {
-  console.log(Book_Handler);
-  console.log(Books);
+  Book_Handler.init();
+  Books.init();
 };
 
 Init();
