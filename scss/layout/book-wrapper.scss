@@ -1,7 +1,5 @@
 .books-wrapper{
-    background-color: rgb(49, 255, 117);
     list-style: none;
-    padding-left: 0;
     .book {
         padding-bottom: 0.8rem;
         border-bottom: 2px solid black;
@@ -9,6 +7,11 @@
 }
 
 .form{
-    display: flex;
-    flex-direction: column;
+    fieldset {
+        border: none;
+        input {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+    }
 }

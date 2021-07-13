@@ -1,16 +1,26 @@
-.books-wrapper {
-  background-color: #31ff75;
-  list-style: none;
+ul {
   padding-left: 0;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+}
+
+.books-wrapper {
+  list-style: none;
 }
 .books-wrapper .book {
   padding-bottom: 0.8rem;
   border-bottom: 2px solid black;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
+.form fieldset {
+  border: none;
+}
+.form fieldset input {
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=home.css.map */
