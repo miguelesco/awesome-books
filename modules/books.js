@@ -1,30 +1,37 @@
 const LocalStorage = window.localStorage;
 
-const Books = {
-  list: [],
-  bookList: document.querySelector('.books-wrapper'),
-  init: () => {
+class Book {
+  static list = [];
+
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
+
+  static bookList = document.querySelector('.books-wrapper');
+
+  static init() {
     if (LocalStorage.getItem('books')) {
-      Books.render();
+      this.render();
     } else {
       localStorage.setItem('books', '[]');
     }
-  },
-  render: () => {
-    Books.bookList.innerHTML = '';
+  }
+
+  static render() {
+    this.bookList.innerHTML = '';
     const books = JSON.parse(localStorage.getItem('books'));
-    Books.list = [...books];
-    Books.list.forEach((book) => {
+    this.list = [...books];
+    this.list.forEach((book) => {
       const bookElement = `
             <li class="book">
                 <p class="book-title">${book.title}</p>
                 <p class="book-author">${book.author}</p>
                 <button class="removeBtn" >remove</button>
             </li>`;
-      Books.bookList.innerHTML += bookElement;
+      this.bookList.innerHTML += bookElement;
     });
-  },
+  }
+}
 
-};
-
-export default Books;
+export default Book;
