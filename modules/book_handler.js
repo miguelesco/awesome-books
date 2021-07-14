@@ -1,15 +1,12 @@
 import Book from './books.js';
-const date = new Date();
-const fixedDate = date.getMonth()+1+' '+date.getDate()+' '+date.getFullYear()+'  '+date.toLocaleTimeString();
+
 const form = document.querySelector('.form');
-const dateContainer = document.querySelector('.date-container');
 
 class BookHandler {
   static init() {
     form.addEventListener('submit', (event) => this.add(event));
     this.checkBtns();
 
-    dateContainer.innerHTML = fixedDate;
   }
 
   static checkBtns() {
@@ -43,5 +40,7 @@ class BookHandler {
     this.checkBtns();
   }
 }
+
+
 
 export default BookHandler;
