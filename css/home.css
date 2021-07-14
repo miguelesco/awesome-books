@@ -45,12 +45,28 @@ h1 {
   box-shadow: 4px 3px 0px -1px rgba(0, 0, 0, 0.75);
 }
 
+.form-title {
+  font-weight: bolder;
+  line-height: 80px;
+}
+
 .form fieldset {
   border: none;
+  width: 40%;
+  margin: 0 auto;
 }
 .form fieldset input {
   display: block;
   margin-bottom: 0.5rem;
+  border: 3px solid black;
+  font-weight: bold !important;
+  color: black !important;
+}
+.form fieldset .addBtn {
+  margin-left: auto;
+  -webkit-box-shadow: 4px 3px 0px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 3px 0px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 3px 0px -1px rgba(0, 0, 0, 0.75);
 }
 
 /*# sourceMappingURL=home.css.map */
