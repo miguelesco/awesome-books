@@ -23,7 +23,7 @@ class Book {
     const books = JSON.parse(localStorage.getItem('books'));
     this.list = [...books];
     this.list.forEach((book, i) => {
-      let count = i+1;
+      const count = i + 1;
       const bg = count % 2 ? 'gray-bg' : 'white-bg';
       const bookElement = `
             <li class="book ${bg}" >

@@ -10,21 +10,24 @@ h1 {
 
   .book {
     @include d-flex(row);
+
     justify-content: space-between;
     align-items: center;
     font-weight: 600;
     padding: 2px 10px 2px 10px;
+
     p {
       margin-bottom: 0;
       font-weight: bold;
       line-height: 40px;
       font-size: 17px;
     }
+
     .removeBtn {
       border: 3px solid black;
-      -webkit-box-shadow: 4px 3px 0px -1px rgba(0,0,0,0.75);
-      -moz-box-shadow: 4px 3px 0px -1px rgba(0,0,0,0.75);
-      box-shadow: 4px 3px 0px -1px rgba(0,0,0,0.75);
+      -webkit-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+      box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
     }
   }
 }
@@ -39,6 +42,7 @@ h1 {
     border: none;
     width: 40%;
     margin: 0 auto;
+
     input {
       display: block;
       margin-bottom: 0.5rem;
@@ -46,11 +50,12 @@ h1 {
       font-weight: bold !important;
       color: black !important;
     }
+
     .addBtn {
       margin-left: auto;
-      -webkit-box-shadow: 4px 3px 0px -1px rgba(0,0,0,0.75);
-      -moz-box-shadow: 4px 3px 0px -1px rgba(0,0,0,0.75);
-      box-shadow: 4px 3px 0px -1px rgba(0,0,0,0.75);
+      -webkit-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+      box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
     }
   }
 }

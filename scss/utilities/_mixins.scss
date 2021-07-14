@@ -1,5 +1,5 @@
 
-@mixin d-flex($direction){
+@mixin d-flex($direction) {
   display: flex;
   flex-direction: $direction;
 }

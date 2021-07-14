@@ -47,9 +47,9 @@ h1 {
 }
 .books-wrapper .book .removeBtn {
   border: 3px solid black;
-  -webkit-box-shadow: 4px 3px 0px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 3px 0px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: 4px 3px 0px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
 }
 
 .form-title {
@@ -71,9 +71,9 @@ h1 {
 }
 .form fieldset .addBtn {
   margin-left: auto;
-  -webkit-box-shadow: 4px 3px 0px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 3px 0px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: 4px 3px 0px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
 }
 
 /*# sourceMappingURL=home.css.map */
