@@ -7,12 +7,20 @@ body {
   padding: 1rem;
 }
 
+.divider {
+  width: 30%;
+  height: 5px;
+  background-color: black;
+  margin: auto;
+  margin-top: 5rem;
+}
+
 .gray-bg {
   background-color: rgba(0, 0, 0, 0.096);
 }
 
 .white-bg {
-  background-color: #fff;
+  background-color: transparent;
 }
 
 h1 {
@@ -38,7 +46,6 @@ h1 {
   font-size: 17px;
 }
 .books-wrapper .book .removeBtn {
-  background-color: white;
   border: 3px solid black;
   -webkit-box-shadow: 4px 3px 0px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 3px 0px -1px rgba(0, 0, 0, 0.75);

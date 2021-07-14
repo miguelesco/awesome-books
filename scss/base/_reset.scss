@@ -10,10 +10,18 @@ body {
   padding: 1rem;
 }
 
+.divider {
+  width: 30%;
+  height: 5px;
+  background-color: black;
+  margin: auto;
+  margin-top: 5rem;
+}
+
 .gray-bg {
   background-color: rgba(0, 0, 0, 0.096);
 }
 
 .white-bg {
-  background-color: #fff;
+  background-color: transparent;
 }
