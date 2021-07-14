@@ -7,20 +7,73 @@ body {
   padding: 1rem;
 }
 
+.divider {
+  width: 30%;
+  height: 5px;
+  background-color: black;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.gray-bg {
+  background-color: rgba(0, 0, 0, 0.096);
+}
+
+.white-bg {
+  background-color: transparent;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
 .books-wrapper {
   list-style: none;
+  border: 5px solid black;
 }
 .books-wrapper .book {
-  padding-bottom: 0.8rem;
-  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  padding: 2px 10px 2px 10px;
+}
+.books-wrapper .book p {
+  margin-bottom: 0;
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 17px;
+}
+.books-wrapper .book .removeBtn {
+  border: 3px solid black;
+  -webkit-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+}
+
+.form-title {
+  font-weight: bolder;
+  line-height: 80px;
 }
 
 .form fieldset {
   border: none;
+  width: 40%;
+  margin: 0 auto;
 }
 .form fieldset input {
   display: block;
   margin-bottom: 0.5rem;
+  border: 3px solid black;
+  font-weight: bold !important;
+  color: black !important;
+}
+.form fieldset .addBtn {
+  margin-left: auto;
+  -webkit-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
 }
 
 /*# sourceMappingURL=home.css.map */

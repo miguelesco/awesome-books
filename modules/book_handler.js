@@ -21,6 +21,8 @@ class BookHandler {
     const title = inputs[0].value;
     const author = inputs[1].value;
     const newBook = new Book(title, author);
+    inputs[0].value = '';
+    inputs[1].value = '';
     const storageBooks = JSON.parse(localStorage.getItem('books'));
 
     storageBooks.push(newBook);
