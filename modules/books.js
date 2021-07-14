@@ -22,12 +22,13 @@ class Book {
     this.bookList.innerHTML = '';
     const books = JSON.parse(localStorage.getItem('books'));
     this.list = [...books];
-    this.list.forEach((book) => {
+    this.list.forEach((book, i) => {
+      let count = i+1;
+      const bg = count % 2 ? 'gray-bg' : 'white-bg';
       const bookElement = `
-            <li class="book">
-                <p class="book-title">${book.title}</p>
-                <p class="book-author">${book.author}</p>
-                <button class="removeBtn" >remove</button>
+            <li class="book ${bg}" >
+              <p class="book-title">"${book.title}" by ${book.author}</p>
+              <button class="removeBtn" >Remove</button>
             </li>`;
       this.bookList.innerHTML += bookElement;
     });

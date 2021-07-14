@@ -1,9 +1,15 @@
+@use '../utilities' as *;
+
 .books-wrapper {
   list-style: none;
+  border: 5px solid black;
+  padding: 2px 5px 2px 5px;
 
   .book {
-    padding-bottom: 0.8rem;
-    border-bottom: 2px solid black;
+    @include d-flex(row);
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
   }
 }
 

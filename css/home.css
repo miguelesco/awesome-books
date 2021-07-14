@@ -7,12 +7,25 @@ body {
   padding: 1rem;
 }
 
+.gray-bg {
+  background-color: rgba(0, 0, 0, 0.096);
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
 .books-wrapper {
   list-style: none;
+  border: 5px solid black;
+  padding: 2px 5px 2px 5px;
 }
 .books-wrapper .book {
-  padding-bottom: 0.8rem;
-  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
 }
 
 .form fieldset {
