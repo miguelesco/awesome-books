@@ -1,8 +1,14 @@
 const dateContainer = document.querySelector('.date-container');
-const booksList = document.querySelector('#book-list');
-const addBook = document.querySelector('#addBook');
-const contact = document.querySelector('#contact');
 const navElements = Array.from(document.getElementsByClassName('nav-element'));
+const sections = [
+
+  document.querySelector('#book-list'),
+
+  document.querySelector('#addBook'),
+
+  document.querySelector('#contact'),
+
+];
 
 const GeneralFunctions = {
   init() {
@@ -20,24 +26,8 @@ const GeneralFunctions = {
     return fixedDate;
   },
   changeDisplay: (index) => {
-    switch (index) {
-      case 0:
-        booksList.classList.toggle('hide');
-        addBook.classList.add('hide');
-        contact.classList.add('hide');
-        break;
-      case 1:
-        addBook.classList.toggle('hide');
-        booksList.classList.add('hide');
-        contact.classList.add('hide');
-        break;
-      case 2:
-        contact.classList.toggle('hide');
-        booksList.classList.add('hide');
-        addBook.classList.add('hide');
-        break;
-      default:
-        break;
+    for (let i = 0; i < sections.length; i++) {
+      sections[i].classList[i === index ? 'remove' : 'add']('hide');
     }
   },
   listenNavbarItems() {
