@@ -4,15 +4,16 @@ const addBook = document.querySelector('#addBook');
 const contact = document.querySelector('#contact');
 const navElements = Array.from(document.getElementsByClassName('nav-element'));
 
-
 const GeneralFunctions = {
   init() {
     dateContainer.innerHTML = this.date();
     this.changeDisplay(0);
-    this.listenNavbarItems();    
+    this.listenNavbarItems();
   },
   date: () => {
-    const DateTime = luxon.DateTime;
+    /* eslint-disable */
+    const { DateTime } = luxon;
+    /* eslint-disable */
     const now = DateTime.now();
     const timeSimbol = now.hour > 12 ? 'pm' : 'am';
     const fixedDate = `${now.monthLong} ${now.day} ${now.year},${now.hour}:${now.minute}:${now.second} ${timeSimbol}`;
