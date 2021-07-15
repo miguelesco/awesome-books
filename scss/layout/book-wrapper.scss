@@ -4,6 +4,13 @@ h1 {
   font-weight: bolder;
 }
 
+.date-container {
+  margin-left: auto;
+  width: 190px;
+  font-weight: bold;
+  font-style: italic;
+}
+
 .books-wrapper {
   list-style: none;
   border: 5px solid black;
@@ -22,19 +29,13 @@ h1 {
       line-height: 40px;
       font-size: 17px;
     }
-
-    .removeBtn {
-      border: 3px solid black;
-      -webkit-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
-      box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
-    }
   }
 }
 
 .form-title {
   font-weight: bolder;
   line-height: 80px;
+  font-size: 36px;
 }
 
 .form {
@@ -45,6 +46,7 @@ h1 {
 
     input {
       display: block;
+      margin-top: 2rem;
       margin-bottom: 0.5rem;
       border: 3px solid black;
       font-weight: bold !important;
@@ -56,6 +58,29 @@ h1 {
       -webkit-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
       box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+    }
+  }
+}
+
+.contact {
+  h2 {
+    margin-bottom: 2rem;
+  }
+  div {
+    @include d-flex(column);
+    align-items: center;
+    
+    .description {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 3rem;
+    }
+    .contact-item {
+      font-weight: bold;
+      font-size: 16px;
+      p {
+        margin-bottom: 0;
+      }
     }
   }
 }

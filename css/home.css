@@ -7,9 +7,20 @@ body {
   padding: 1rem;
 }
 
+body main {
+  height: 86vh;
+}
+
 .hide {
   display: none;
   visibility: hidden;
+}
+
+.border {
+  border: 3px solid black;
+  -webkit-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
 }
 
 .divider {
@@ -28,14 +39,80 @@ body {
   background-color: transparent;
 }
 
+footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+}
+
+.navbar p {
+  margin-right: auto;
+  margin-bottom: 0;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.navbar ul :nth-child(2),
+.navbar ul :nth-child(3) {
+  border-left: solid 3px black;
+}
+
+.navbar ul li {
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.navbar ul li :active {
+  color: blue;
+}
+
+.navbar ul li :hover {
+  color: blue;
+}
+
+.navbar ul li p {
+  margin-bottom: 0;
+}
+
 h1 {
   font-weight: bolder;
+}
+
+.date-container {
+  margin-left: auto;
+  width: 190px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .books-wrapper {
   list-style: none;
   border: 5px solid black;
 }
+
 .books-wrapper .book {
   display: flex;
   flex-direction: row;
@@ -44,22 +121,18 @@ h1 {
   font-weight: 600;
   padding: 2px 10px 2px 10px;
 }
+
 .books-wrapper .book p {
   margin-bottom: 0;
   font-weight: bold;
   line-height: 40px;
   font-size: 17px;
 }
-.books-wrapper .book .removeBtn {
-  border: 3px solid black;
-  -webkit-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
-  box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
-}
 
 .form-title {
   font-weight: bolder;
   line-height: 80px;
+  font-size: 36px;
 }
 
 .form fieldset {
@@ -67,13 +140,16 @@ h1 {
   width: 40%;
   margin: 0 auto;
 }
+
 .form fieldset input {
   display: block;
+  margin-top: 2rem;
   margin-bottom: 0.5rem;
   border: 3px solid black;
   font-weight: bold !important;
   color: black !important;
 }
+
 .form fieldset .addBtn {
   margin-left: auto;
   -webkit-box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
@@ -81,4 +157,27 @@ h1 {
   box-shadow: 4px 3px 0 -1px rgba(0, 0, 0, 0.75);
 }
 
-/*# sourceMappingURL=home.css.map */
+.contact h2 {
+  margin-bottom: 2rem;
+}
+
+.contact div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact div .description {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 3rem;
+}
+
+.contact div .contact-item {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contact div .contact-item p {
+  margin-bottom: 0;
+}

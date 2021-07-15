@@ -19,9 +19,9 @@
 </head>
 <body>
   <header>
-  <nav>
+  <nav class="border navbar">
     <p>Awesome Books</p>
-    <ul class="nav-wrapper">
+    <ul class="nav-wrapper ">
       <li class="nav-element"><p >List</p></li>
       <li class="nav-element"><p  >Add New</p></li>
       <li class="nav-element"><p >Contact</p></li>
@@ -38,7 +38,6 @@
     </section>
 
     <section id="addBook" class="hide">
-      <hr class="divider">
       <h2 class="form-title text-center">Add a new book</h2>
       <form class="form">
         <fieldset>
@@ -50,18 +49,19 @@
     </section>
 
     <section class="contact hide" id="contact">
-      <h2 class="form-title">Contact information</h2>
-      <p>Do you have any questions or just want to say "Hello"?</p>
-      <p>you can reach out to us!</p>
-
-      <ul class="contact-list">
-        <li class="contact-item"><a href="#">Miguel Github</a></li>
-        <li class="contact-item"><a href="#">Enmanuel Github</a></li>
-      </ul>
+      <h2 class="form-title text-center">Contact information</h2>
+      <div>
+        <p class="description">Do you have any questions or just want to say "Hello"? <br> you can reach out to us!</p>  
+        <ul class="contact-list">
+          <li class="contact-item"><p>Out Email is mail@microverse.com</p></li>
+          <li class="contact-item"><p>Our Phone Number is (+1)555-252</p></li>
+          <li class="contact-item"><p>Our Addres is Florida El Doral 1St</p></li>
+        </ul>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>Copyright Reserved to Enmanuel and Miguel</p>
+  <footer class="border">
+      <p>Copyright Reserved to Enmanuel and Miguel</p>
   </footer>
 
   <script type="module" src="./main.js"></script>

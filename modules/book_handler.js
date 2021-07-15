@@ -6,7 +6,6 @@ class BookHandler {
   static init() {
     form.addEventListener('submit', (event) => this.add(event));
     this.checkBtns();
-
   }
 
   static checkBtns() {
@@ -40,7 +39,5 @@ class BookHandler {
     this.checkBtns();
   }
 }
-
-
 
 export default BookHandler;

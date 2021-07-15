@@ -1,4 +1,3 @@
-
 const dateContainer = document.querySelector('.date-container');
 const booksList = document.querySelector('#book-list');
 const addBook = document.querySelector('#addBook');
@@ -6,7 +5,7 @@ const contact = document.querySelector('#contact');
 const navElements = Array.from(document.getElementsByClassName('nav-element'));
 
 const GeneralFunctions = {
-  init: function ()  {
+  init() {
     dateContainer.innerHTML = this.date();
     this.changeDisplay(0);
     this.listenNavbarItems();
@@ -14,12 +13,11 @@ const GeneralFunctions = {
   date: () => {
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
     const date = new Date();
-    const timeSimbol = date.getHours() > 12 ? 'pm' : 'am'; 
+    const timeSimbol = date.getHours() > 12 ? 'pm' : 'am';
     const fixedDate = `${months[date.getMonth()]} ${date.getDate()} ${date.getFullYear()} ${date.toLocaleTimeString()} ${timeSimbol}`;
     return fixedDate;
   },
   changeDisplay: (index) => {
-    console.log(index);
     switch (index) {
       case 0:
         booksList.classList.toggle('hide');
@@ -36,18 +34,15 @@ const GeneralFunctions = {
         booksList.classList.add('hide');
         addBook.classList.add('hide');
         break;
+      default:
+        break;
     }
   },
-  listenNavbarItems: function () {
+  listenNavbarItems() {
     navElements.forEach((btn, i) => {
-      btn.addEventListener('click', ()=> this.changeDisplay(i));
+      btn.addEventListener('click', () => this.changeDisplay(i));
     });
-  }
-}
-
-
-
-
-
+  },
+};
 
 export default GeneralFunctions;
