@@ -9,6 +9,7 @@
   <meta name="keywords" content="Web,Web Design, course, HTML, CSS, Javascript" />
   <meta name="author" content="Miguelangel Escorche and Enmanuel Lassis" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.1/build/global/luxon.min.js"></script>
   <script
     src="https://kit.fontawesome.com/27e53b408d.js"
     crossorigin="anonymous">
@@ -18,23 +19,53 @@
   <title>Awesome Books</title>
 </head>
 <body>
+  <header>
+  <nav class="border navbar">
+    <p>Awesome Books</p>
+    <ul class="nav-wrapper ">
+      <li class="nav-element"><p >List</p></li>
+      <li class="nav-element"><p  >Add New</p></li>
+      <li class="nav-element"><p >Contact</p></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
-    <h1 class="text-center fw-bolder">All awesome books</h1>
-    <ul class="books-wrapper ">
-      
-    </ul>
-    <hr class="divider">
-    <h2 class="form-title text-center">Add a new book</h2>
-    <form class="form">
-      <fieldset>
-        <input class="form-control" type="text" placeholder="title">
-        <input class="form-control" type="text" placeholder="author">
-        <input class="addBtn btn-success" type="submit" value="add">
-      </fieldset>
-    </form>
+    <div class="date-container">DATE</div>
+    <section id="book-list">
+      <h1 class="text-center fw-bolder">All awesome books</h1>
+      <ul class="books-wrapper ">        
+      </ul>
+    </section>
+
+    <section id="addBook" class="hide">
+      <h2 class="form-title text-center">Add a new book</h2>
+      <form class="form">
+        <fieldset>
+          <input class="form-control" type="text" placeholder="title">
+          <input class="form-control" type="text" placeholder="author">
+          <input class="addBtn btn-success" type="submit" value="add">
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="contact hide" id="contact">
+      <h2 class="form-title text-center">Contact information</h2>
+      <div>
+        <p class="description">Do you have any questions or just want to say "Hello"? <br> you can reach out to us!</p>  
+        <ul class="contact-list">
+          <li class="contact-item"><p>Out Email is mail@microverse.com</p></li>
+          <li class="contact-item"><p>Our Phone Number is (+1)555-252</p></li>
+          <li class="contact-item"><p>Our Addres is Florida El Doral 1St</p></li>
+        </ul>
+      </div>
+    </section>
   </main>
+  <footer class="border">
+      <p>Copyright Reserved to Enmanuel and Miguel</p>
+  </footer>
 
   <script type="module" src="./main.js"></script>
+  
 </body>
 </html>

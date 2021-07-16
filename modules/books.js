@@ -28,7 +28,7 @@ class Book {
       const bookElement = `
             <li class="book ${bg}" >
               <p class="book-title">"${book.title}" by ${book.author}</p>
-              <button class="removeBtn btn-danger" >Remove</button>
+              <button class="removeBtn border btn-danger" >Remove</button>
             </li>`;
       this.bookList.innerHTML += bookElement;
     });
